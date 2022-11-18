@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.rokiba.lostandfound.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navFound"
+        android:name="com.rokiba.lostandfound.ui.main.found.FoundFragment"
+        android:label="@string/found"
+        tools:layout="@layout/fragment_found" />
+
+    <fragment
+        android:id="@+id/navLost"
+        android:name="com.rokiba.lostandfound.ui.main.lost.LostFragment"
+        android:label="@string/lost"
+        tools:layout="@layout/fragment_lost" />
+
+    <fragment
+        android:id="@+id/navProfile"
+        android:name="com.rokiba.lostandfound.ui.main.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

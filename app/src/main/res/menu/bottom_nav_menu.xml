@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navFound"
+        android:icon="@drawable/ic_check_circle"
+        android:title="@string/found" />
+
+    <item
+        android:id="@+id/navLost"
+        android:icon="@drawable/ic_search"
+        android:title="@string/lost" />
+
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+
+</menu>

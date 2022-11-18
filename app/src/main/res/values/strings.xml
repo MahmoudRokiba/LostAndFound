@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lost And Found</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="error_server_side">Server Side Error</string>
+    <string name="error_connection">Connection Error</string>
+    <string name="error_unknown">Unknown Error Occurred</string>
+    <string name="label_json_error">Json Parsing Error</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register_here">Don`t have an account? Register here</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="register">Register</string>
+    <string name="found">Found</string>
+    <string name="lost">Lost</string>
+    <string name="did_you_found_an_item">Did you found an Item?</string>
+    <string name="did_you_lost_an_item">Did you lost an item</string>
+    <string name="add_post_for_this_item_here_so_the_founder_can_reach_you">Add post for this item here so the founder can reach you</string>
+    <string name="add_post_for_this_item_here_so_the_owner_can_reach_you">Add post for this item here so the owner can reach you</string>
+    <string name="lorem">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</string>
+    <string name="profile">Profile</string>
+
+</resources>
