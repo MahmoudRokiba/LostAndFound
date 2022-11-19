@@ -1,0 +1,17 @@
+package com.rokiba.lostandfound.ui.main.addpost
+
+import com.rokiba.lostandfound.MyApp
+import com.rokiba.lostandfound.data.Repository
+import com.rokiba.lostandfound.ui.base.BaseViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
+
+/**
+ * @author Mahmoud Rokiba
+ * Created 11/19/2022 at 5:40 AM
+ */
+@HiltViewModel
+class AddPostViewModel @Inject constructor(private val repository: Repository, app: MyApp) :
+    BaseViewModel(app) {
+
+}

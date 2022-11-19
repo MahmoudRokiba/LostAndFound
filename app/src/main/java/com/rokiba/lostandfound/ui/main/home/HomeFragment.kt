@@ -9,7 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.rokiba.lostandfound.R
 import com.rokiba.lostandfound.databinding.FragmentHomeBinding
+import com.rokiba.lostandfound.extenstion.openActivity
 import com.rokiba.lostandfound.ui.base.BaseFragment
+import com.rokiba.lostandfound.ui.main.addpost.AddPostActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -22,6 +24,11 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>(HomeViewMo
     override fun getLayout() = R.layout.fragment_home
 
     override fun init(view: View, savedInstanceState: Bundle?) {
-
+        dataBinding.btnFoundItem.setOnClickListener {
+            requireActivity().openActivity(AddPostActivity::class.java, null, false)
+        }
+        dataBinding.btnLostItem.setOnClickListener {
+            requireActivity().openActivity(AddPostActivity::class.java, null, false)
+        }
     }
 }

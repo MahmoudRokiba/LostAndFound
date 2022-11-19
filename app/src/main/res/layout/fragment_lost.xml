@@ -44,6 +44,7 @@
                         android:layout_height="@dimen/_40sdp">
 
                         <ImageView
+                            android:scaleType="centerCrop"
                             android:src="@drawable/profile"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"/>
@@ -59,7 +60,7 @@
                         <TextView
                             android:textColor="@color/textColorMain"
                             android:textStyle="bold"
-                            android:text="Mahmoud Rokiba"
+                            android:text="HTI Team"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -115,6 +116,7 @@
                         android:layout_height="@dimen/_40sdp">
 
                         <ImageView
+                            android:scaleType="centerCrop"
                             android:src="@drawable/profile"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"/>
@@ -130,7 +132,7 @@
                         <TextView
                             android:textColor="@color/textColorMain"
                             android:textStyle="bold"
-                            android:text="Mahmoud Rokiba"
+                            android:text="HTI Team"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 

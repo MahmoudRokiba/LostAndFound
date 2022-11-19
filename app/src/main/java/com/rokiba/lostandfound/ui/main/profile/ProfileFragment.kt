@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import com.rokiba.lostandfound.R
 import com.rokiba.lostandfound.databinding.FragmentProfileBinding
+import com.rokiba.lostandfound.extenstion.openActivity
 import com.rokiba.lostandfound.ui.base.BaseFragment
+import com.rokiba.lostandfound.ui.login.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -22,7 +24,10 @@ class ProfileFragment :
     override fun getLayout() = R.layout.fragment_profile
 
     override fun init(view: View, savedInstanceState: Bundle?) {
-
+        dataBinding.btnLogout.setOnClickListener {
+            requireActivity().finishAffinity()
+            requireActivity().openActivity(LoginActivity::class.java, null, true)
+        }
     }
 
 }

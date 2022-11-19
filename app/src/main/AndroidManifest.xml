@@ -16,8 +16,11 @@
         android:theme="@style/Theme.LostAndFound"
         tools:targetApi="33">
         <activity
-            android:name=".ui.main.postdetails.PostDetailsActivity"
+            android:name=".ui.main.addpost.AddPostActivity"
             android:exported="false"/>
+        <activity
+            android:name=".ui.main.postdetails.PostDetailsActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.register.RegisterActivity"
             android:exported="false" />
