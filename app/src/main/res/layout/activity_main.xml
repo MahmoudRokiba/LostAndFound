@@ -15,6 +15,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/white"
+                android:text="Home"
+                android:gravity="center|start"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:id="@+id/txtTitle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:tint="@color/white"
+                android:padding="@dimen/_11sdp"
+                android:src="@drawable/ic_notifications_black_24dp"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"/>
+
+        </LinearLayout>
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/nav_view"
             android:layout_width="match_parent"
@@ -24,6 +53,7 @@
             app:menu="@menu/bottom_nav_menu" />
 
         <fragment
+            android:layout_below="@id/topBar"
             android:layout_above="@id/nav_view"
             android:id="@+id/nav_host_fragment_activity_main"
             android:name="androidx.navigation.fragment.NavHostFragment"
