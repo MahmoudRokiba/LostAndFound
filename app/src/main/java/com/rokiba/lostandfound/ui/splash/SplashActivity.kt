@@ -7,6 +7,7 @@ import com.rokiba.lostandfound.databinding.ActivitySplashBinding
 import com.rokiba.lostandfound.extenstion.openActivity
 import com.rokiba.lostandfound.ui.base.BaseActivity
 import com.rokiba.lostandfound.ui.login.LoginActivity
+import com.rokiba.lostandfound.ui.main.MainActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -26,7 +27,11 @@ class SplashActivity : BaseActivity<SplashViewModel, ActivitySplashBinding>(Spla
             }
 
             override fun onFinish() {
-                openActivity(LoginActivity::class.java, null, true)
+                if (myPreferences.getPhone() == "") {
+                    openActivity(LoginActivity::class.java, null, true)
+                } else {
+                    openActivity(MainActivity::class.java, null, true)
+                }
             }
         }.start()
 

@@ -25,10 +25,14 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>(HomeViewMo
 
     override fun init(view: View, savedInstanceState: Bundle?) {
         dataBinding.btnFoundItem.setOnClickListener {
-            requireActivity().openActivity(AddPostActivity::class.java, null, false)
+            val bundle = Bundle()
+            bundle.putBoolean("isLost", false)
+            requireActivity().openActivity(AddPostActivity::class.java, bundle, false)
         }
         dataBinding.btnLostItem.setOnClickListener {
-            requireActivity().openActivity(AddPostActivity::class.java, null, false)
+            val bundle = Bundle()
+            bundle.putBoolean("isLost", true)
+            requireActivity().openActivity(AddPostActivity::class.java, bundle, false)
         }
     }
 }

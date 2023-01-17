@@ -16,8 +16,15 @@
         android:theme="@style/Theme.LostAndFound"
         tools:targetApi="33">
         <activity
+            android:name=".ui.main.admin.AdminActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ui.main.addpost.AddPostActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.main.postdetails.PostDetailsActivity"
             android:exported="false" />

@@ -87,6 +87,22 @@ class MyPreferences @Inject constructor(val prefs: SharedPreferences, val gson: 
         return read("deviceID", "")!!
     }
 
+    fun setPhone(phone: String){
+        write("phone", phone)
+    }
+
+    fun getPhone(): String{
+        return read("phone", "")!!
+    }
+
+    fun setName(name: String){
+        write("name", name)
+    }
+
+    fun getName(): String{
+        return read("name", "")!!
+    }
+
     fun setCustPhone(custPhone: String){
         write("custPhone", custPhone)
     }
